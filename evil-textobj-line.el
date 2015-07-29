@@ -30,6 +30,16 @@
   "Text object line for Evil"
   :group 'evil)
 
+(defcustom evil-textobj-line-i-key "l"
+  "Keys for evil-inner-line"
+  :type 'string
+  :group 'evil-textobj-line)
+
+(defcustom evil-textobj-line-a-key "l"
+  "Keys for evil-a-line"
+  :type 'string
+  :group 'evil-textobj-line)
+
 (defun evil-line-range (count beg end type &optional inclusive)
   (if inclusive
       (evil-range (line-beginning-position) (line-end-position))
@@ -49,8 +59,8 @@
   "Select inner range between a character by which the command is followed."
   (evil-line-range count beg end type))
 
-(define-key evil-outer-text-objects-map "l" 'evil-a-line)
-(define-key evil-inner-text-objects-map "l" 'evil-inner-line)
+(define-key evil-outer-text-objects-map evil-textobj-line-a-key 'evil-a-line)
+(define-key evil-inner-text-objects-map evil-textobj-line-i-key 'evil-inner-line)
 
 (provide 'evil-textobj-line)
 
