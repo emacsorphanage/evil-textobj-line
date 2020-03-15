@@ -377,4 +377,4 @@ the end of the execution of BODY."
     (should (string= (buffer-string)
                      contents))))
 
-(provide 'evil-tests)
+(provide 'evil-textobj-line-tests)

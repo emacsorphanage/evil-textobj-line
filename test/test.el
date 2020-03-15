@@ -23,7 +23,7 @@
 
 (require 'ert)
 (require 'evil)
-(require 'evil-tests)
+(require 'evil-textobj-line-tests)
 
 (require 'evil-textobj-line)
 
