@@ -1,10 +1,8 @@
-;;; evil-textobj-line.el --- evil textobj line
+;;; evil-textobj-line.el --- Line text object for Evil
 
-;; Copyright (C) 2015 by Syohei YOSHIDA
+;; Copyright (C) 2015 Syohei YOSHIDA
 
 ;; Author: Syohei YOSHIDA <syohex@gmail.com>
-;; URL: https://github.com/syohex/emacs-evil-textobj-line
-;; Version: 0.01
 ;; Package-Requires: ((evil "1.0.0"))
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -22,21 +20,23 @@
 
 ;;; Commentary:
 
+;; This package implements a line text object for Evil.
+
 ;;; Code:
 
 (require 'evil)
 
 (defgroup evil-textobj-line nil
-  "Text object line for Evil"
+  "Line text object for Evil."
   :group 'evil)
 
 (defcustom evil-textobj-line-i-key "l"
-  "Keys for evil-inner-line"
+  "Keys for evil-inner-line."
   :type 'string
   :group 'evil-textobj-line)
 
 (defcustom evil-textobj-line-a-key "l"
-  "Keys for evil-a-line"
+  "Keys for evil-a-line."
   :type 'string
   :group 'evil-textobj-line)
 
